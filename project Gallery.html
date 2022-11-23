@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Gallery</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="heading-text">My project <span>gallery</span></h2>
+      <ul class="image-gallery">
+        <li>
+         <a href="https://github.com/ReyhanehMehrabi/Menu"><img src="Imeges/download.jpg"  alt="Menu" /></a> 
+          
+          <h2><span>Html Project</span></h2>
+          <button class="button" type="button"  onclick='Description("Html")'>Description </button>
+          <p id="Html" class="discription">This is my simple Html project.
+            you can find a code in my githup :</p>
+            <a href="https://github.com/ReyhanehMehrabi/Menu">menu</a>
+          
+        </li>
+        <li>
+          <a href="https://github.com/ReyhanehMehrabi/HTML-project"><img src="Imeges/download.png" alt="Digikala" /></a>
+          <h2><span>Java Script project</span></h2>
+          <button  class="button" type="button"  onclick='Description("Java Script")'>Description</button>
+          <p  id="Java Script" class="discription">This is my simple Java Script project.
+            you can find a code in my githup :</p>
+            <a href="https://github.com/ReyhanehMehrabi/HTML-project/blob/master/djkala.code-workspace">Digikala</a>
+        </li>
+        <li>
+          <a href="https://github.com/ReyhanehMehrabi/python-projects"><img src="Imeges/images (2).jpg" alt="Python" /></a>
+          <h2><span>Python Project</span></h2>
+          <button class="button" type="button" onclick='Description("Python")'>Description</button>
+            <p id="Python" class="discription">This is my simple Python project.
+              you can find a code in my githup :</p>
+              <a href="https://github.com/ReyhanehMehrabi/python-projects">Python</a>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
+
+<script>
+  function Description(id) {
+   if ( document.getElementById(id).style.display === "")
+   {document.getElementById(id).style.display = "block"
+    }else 
+    document.getElementById(id).style.display = ""
+  }
+  </script>
